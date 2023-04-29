@@ -1,0 +1,694 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="/css/bootstrap.css" rel="stylesheet">
+
+<link href="/css/label-style.css" rel="stylesheet">
+<link href="/css/custom-styles.css" rel="stylesheet">
+<!-- <link href="/css/panel.css" rel="stylesheet"> -->
+<link href="/css/bs-docs-side-nav.css" rel="stylesheet">
+<link href="/css/header_styles.css" rel="stylesheet">
+
+<link href="/css/tablesorter/theme.bootstrap.css" rel="stylesheet">
+
+<link href="/css/jquery-ui.css" rel="stylesheet">
+<link href="/css/tablesorter/theme.jui.css" rel="stylesheet">
+<link href="/css/datepicker.css" rel="stylesheet">
+<link href="/css/slider.css" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="/css/alertify/alertify.core.css">
+<link type="text/css" rel="stylesheet" href="/css/alertify/alertify.default.css">
+
+<link type="text/css" rel="stylesheet" href="/css/select2.css">
+<link type="text/css" rel="stylesheet" href="/css/dataTables.bootstrap.css">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-switch.css">
+
+<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css">
+
+<link type="text/css" rel="stylesheet" href="/css/offline-theme-chrome-indicator.css">
+<link rel="stylesheet" href="/css/mathquill.min.css">
+
+<script src="/js/jquery-latest.js"></script>
+
+<script src="/js/jquery.validate.js"></script>
+
+<script src="/js/modernizr-2.6.2.min.js"></script>
+
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap-notify.js"></script>
+
+<script src="/js/jquery-ui-all.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/mathquill.min.js"></script>
+<script>
+    MathJax = {
+        startup: {
+            typeset: false
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            macros: {
+                degree: '^\\circ'
+            }
+        },
+        svg: {
+            fontCache: 'global'
+        },
+        options: {
+          enableMenu: false
+        },
+        "HTML-CSS": {
+            linebreaks: {
+                automatic: true,
+                width: "container"
+            }
+        }
+    };
+</script>
+<script id="MathJax-script" src="/js/mjax/tex-mml-chtml.js"></script>
+<script src="/js/d3.js"></script>
+<script src="/js/function-plot.js"></script>
+
+<script src="/js/custom-min/nommoc.min.js"></script>
+
+<script src="/js/common-on-ready-js-methods.js"></script>
+
+<script src="/js/bootstrap-datepicker.js"></script>
+
+<script src="/js/search-table-row-popup.js"></script>
+<script src="/js/bootstrap-slider.js"></script>
+
+<script src="/js/jquery.numeric.js"></script>
+
+<script src="/js/underscore.js"></script>
+
+<script src="/js/hr.js"></script>
+
+<script src="/js/alertify.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/select2.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/bootstrap.touchspin.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/jquery.dataTables.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/dataTables.tableTools.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/dataTables.bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/bootstrap-switch.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/form2object.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/gs/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/gs/circular-preloader.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    ace.require("ace/ext/language_tools");
+</script>
+
+    <link rel="stylesheet" href="/css/bs-panel-colors.css">
+    <link rel="stylesheet" href="/css/custom-styles.css">
+    <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/custom/hints.css">
+    <link rel="stylesheet" href="/css/custom/exec-loader.css">
+    <link rel="stylesheet" href="/css/introjs.css">
+    <link rel="stylesheet" href="/css/custom/help-introjs-ct.css">
+    <link rel="stylesheet" href="/css/google-code-prettify/prettify.css">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bhofnjdebaipfkmlnngediiglinbkiec">
+    <script>
+        window.PagedConfig = {auto: false};
+    </script>
+    <script src="/js/paged.polyfill.v0.2.0.js"></script>
+    <script src="/js/jspdf.min.js"></script>
+    <script src="/js/html2canvas.1.4.1.min.js"></script>
+    <script src="/js/sweetalert2.all.min.js"></script>
+    <script src="/js/jquery.scrollTo.min.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/moment.js"></script>
+    
+    <script type="text/javascript" src="/js/custom-min/ppu.min.js"></script>
+    <script type="text/javascript" src="/js/custom-min/n.min.js"></script>
+    <script src="/js/custom-min/mlt.min.js"></script>
+    
+    <script type="text/javascript" src="/js/jquery.animateNumber.min.js"></script>
+    
+    <style>
+        mjx-assistive-mml {
+            opacity: 0.0 !important;
+        }
+
+        #execResultsHeading {
+            padding: 10px;
+        }
+
+        html {
+            font-size: 1rem;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .swal2-styled.swal2-confirm {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #2778c4 !important;
+            color: #fff;
+            font-size: 1.0625em;
+        }
+
+        *, ::before, ::after {
+            background: none !important;
+        }
+
+        .swal2-container {
+            background: rgba(0, 0, 0, .4) !important;
+        }
+
+        .swal2-popup {
+            display: none;
+            position: relative !important;
+            box-sizing: border-box !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            width: 32em !important;
+            max-width: 100% !important;
+            padding: 1.25em !important;
+            border: none !important;
+            border-radius: 5px !important;
+            background: #fff !important;
+            font-family: inherit !important;
+            font-size: 1rem !important;
+        }
+
+        body {
+            padding-top: 0px !important;
+            -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+            counter-reset: page;
+        }
+
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .expTitle {
+            font-weight: bold;
+        }
+
+        .page {
+            width: 210mm;
+            margin: 10mm auto;
+        }
+
+        .subpage {
+            padding: 0px;
+            font-size: 14px;
+        }
+
+        .execution-results-border {
+            border: 0.01rem solid black;
+        }
+
+
+        @page {
+            size: A4 !important;
+            margin: 24pt 12pt;
+        }
+
+        thead > tr {
+            background-color: gray;
+            color: white;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 257mm;
+                -webkit-print-color-adjust: exact !important;
+            }
+
+            .page {
+                margin: 2mm 15mm 0mm 15mm;
+                width: initial;
+                page-break-after: always;
+            }
+
+            .vertical-text-pageNo, .vertical-text {
+                display: block !important;
+            }
+
+            #page-number:before {
+                counter-increment: page;
+                content: counter(page);
+            }
+        }
+
+        .vertical-text-group {
+            display: inline-block;
+            position: fixed;
+            right: 5%;
+            bottom: 40%;
+            transform-origin: right center;
+            transform: rotate(-90deg);
+        }
+
+        .vertical-text-group > b, .vertical-text-page-number > b {
+            padding: 0 2px;
+            border: 1px dotted black;
+        }
+
+        .vertical-text-page-number {
+            display: inline-block;
+            position: fixed;
+            right: 5%;
+            top: 10%;
+            transform-origin: right center;
+            transform: rotate(-90deg);
+        }
+
+
+        .questionText {
+            font-size: 13px;
+            color: black;
+            background-color: lightyellow;
+            padding: 5px 10px;
+        }
+
+        .questionText p {
+            margin: 0 !important;
+        }
+
+        .questionText pre {
+            display: table;
+        }
+
+        .creamPreTab4 {
+            padding: 10px !important;
+            margin: 0 0 10px !important;
+            font-size: 13px !important;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .questionText.ql-editor, .mcOptionLi.ql-editor {
+            white-space: inherit;
+            height: auto;
+        }
+
+        .displayLabel {
+            border-radius: 4px;
+            border: 1px solid #cccccc;
+            padding: 10px;
+        }
+
+        .tabSymbol, .spaceSymbol, .newlineSymbol {
+            font-weight: bold;
+            color: #888;
+        }
+
+        .ctCharMismatch {
+            border: 1px solid red;
+        }
+
+        .extLink:hover, .extLink:focus {
+            color: #5c30ff !important;
+            text-decoration: underline !important;
+        }
+
+        .extLink {
+            color: #5c30ff !important;
+            text-decoration: underline dotted !important;
+        }
+
+        ct-tab, ct-space, ct-newline {
+            color: white;
+        }
+
+        .cOutputTable td {
+            padding: 0px !important;
+        }
+
+        .cOutputTable td .fa-stack {
+            font-size: 85% !important;
+        }
+
+        .outputPre {
+            padding: 0px !important;
+            margin: 0px !important;
+            font-family: monospace !important;
+            border: 0px !important;
+            background-color: transparent !important;
+        }
+
+        .lang-c ol.linenums > li {
+            list-style-type: decimal;
+        }
+
+        pre.lang-c {
+            margin: 0px;
+            tab-size: 3;
+            white-space: pre-wrap;
+            page-break-inside: auto;
+            box-decoration-break: clone;
+            border: 0px;
+        }
+
+        div#sectionContent {
+            background-color: lightyellow;
+        }
+
+        .section-heading {
+            padding: 0;
+            border: 0;
+        }
+
+        .section-title > a, .section-title > a:active {
+            display: block;
+            padding: 5px;
+            color: #555;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            text-decoration: none;
+        }
+
+        .section-heading a:before {
+            font-family: 'Glyphicons Halflings';
+            content: "\e114";
+            float: right;
+            transition: 0.5s;
+        }
+
+        .section-heading.active a:before {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .questionText {
+            position: relative;
+        }
+
+        @media only print {
+            .hide-in-print {
+                display: none;
+            }
+
+            .lang-c {
+                color: black !important;
+                font-family: monospace !important;
+            }
+        }
+
+        .lang-c {
+            color: white;
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        var questionDBObject = { "_id" : { "$oid" : "585e4ac40cf2f069ef15727c"} , "course" : "549a4b56153641f7e921fc46" , "topic" : "585790df0cf285ed15fb72b5" , "section" : "59969a120cf2e8bbee71769c" , "courseTag" : [ "assessment"] , "questionType" : "54883bea2036d78c5efedc3a" , "difficultyLevel" : "Easy" , "isEnabled" : true , "duration" : "200" , "questionIntent" : "Write a C program to Search an element using Linear Search process" , "pending" : [ ] , "progLanguage" : "585d547b0cf2f069ef15319d" , "restrictedCountries" : [ ] , "previousAppearance" : [ ] , "displayText" : "Write a C program to Search an element using Linear Search process" , "allowExecution" : true , "showConsole" : true , "isConsoleOnlyQuestion" : false , "isHadoop" : false , "allowMultipleFiles" : true , "usingTestCode" : true , "questionText" : "Write a program to <c>search</c> a key element with in the given array of elements using <c>linear search</c> process.<br/><br/>\n\nAt the time of execution, the program should print the message on the console as:\n<pre class='creamPreTab4'>Enter value of n : </pre>\n\nFor example, if the user gives the <b>input</b> as:\n<pre class='creamPreTab4'>Enter value of n : 3</pre>\n\nNext, the program should print the messages one by one on the console as:\n<pre class='creamPreTab4'>Enter element for a[0] : \nEnter element for a[1] : \nEnter element for a[2] : </pre>\n\nif the user gives the <b>input</b> as:\n<pre class='creamPreTab4'>Enter element for a[0] : 89\nEnter element for a[1] : 33\nEnter element for a[2] : 56</pre>\n\nNext, the program should print the message on the console as:\n<pre class='creamPreTab4'>Enter key element : </pre>\n\nif the user gives the <b>input</b> as:\n<pre class='creamPreTab4'>Enter key element : 56</pre>\n\nthen the program should <b>print</b> the result as:\n<pre class='creamPreTab4'>\nThe key element 56 is found at the position 2\n</pre>\n\nSimilarly if the key element is given as <b>25</b> for the above one dimensional array elements then the program should print the output as \"<b>The Key element 25 is not found in the array</b>\".<br/><br/>\n\n<b>Note:</b> Do use the <b>printf()</b> function with a <b>newline</b> character (<c>\\n</c>) at the end." , "correctContentMainFileName" : "Program509.c" , "hints" : [ ] , "parentId" : "" , "filesContentArr" : [ { "fileName" : "Program509.c" , "fileContent" : "" , "correctContent" : "#include<stdio.h>\nvoid main() {\n\tint a[20], i, n, key, flag = 0, pos;\n\tprintf(\"Enter value of n : \");\n\tscanf(\"%d\", &n);\n\tfor (i = 0; i < n; i++) {\n\t\tprintf(\"Enter element for a[%d] : \", i);\n\t\tscanf(\"%d\", &a[i]);\n\t}\n\tprintf(\"Enter key element : \");\n\tscanf(\"%d\", &key);\n\tfor (i = 0; i < n; i++) {\n\t\tif (key == a[i]) {\n\t\t\tflag = 1;\n\t\t\tpos = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif (flag == 1) {\n\t\tprintf(\"The key element %d is found at the position %d\\n\", key, pos);\n\t} else {\n\t\tprintf(\"The key element %d is not found in the array\\n\", key);\n\t}\n}" , "readOnly" : false , "fileHidden" : false}] , "testCases" : { } , "progLangExtraInfo" : "{\n\t\"globalVar\" : {\n\t\t\"CT_WORK_DIR\" : \"ct-c-work\",\n\t\t\"CT_SETUP_PATHS_FILE\" : \"$HOME/.c/setup-paths.sh\",\n\t\t\"CURRENT_EXERCISE_DIR\": \"arrays\",\n\t\t\"INPUT_FILES_REMOTE_PATH\": \"WINDOW_LOCATION_PROTOCOL/WINDOW_LOCATION_HOST/secure/lang/c/CURRENT_EXERCISE_DIR\",\n\t\t\"INPUT_FILE_NAMES\": [\"sample.txt\", \"sample.h\"],\n\t\t\"COMPARE_OUTPUT_FILE\" : true,\n\t\t\"OUTPUT_FILE_NAME\": \"sample.txt\"\n\t},\n\t\"initCmdArr\" : [{\"cmd\" : \"cd $HOME \\r\", \"show\": false},\n\t\t\t\t\t{\"cmd\" : \"mkdir -p CT_WORK_DIR/CURRENT_EXERCISE_DIR\\r\", \"show\" : true, \"infoText\" : \"MKDIR_EXERCISE\"},\n\t\t\t\t\t{\"cmd\" : \"cd CT_WORK_DIR/CURRENT_EXERCISE_DIR\\r\", \"show\": false},\n\t\t\t\t\t{\"cmd\" : \"ls -al  \\r\", \"show\" : false}]\n}" , "cExecutionResultsArr" : [ { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "45" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "67" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "35" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "28" , "isUserInput" : true} , { "programOutput" : "Enter element for a[4] : " , "isProgramOutput" : true} , { "userInput" : "16" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "28" , "isUserInput" : true} , { "programOutput" : "The key element 28 is found at the position 3" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "2" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "7" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "1" , "isUserInput" : true} , { "programOutput" : "Enter element for a[4] : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "2" , "isUserInput" : true} , { "programOutput" : "The key element 2 is found at the position 0" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "452" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "356" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "754" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "127" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "127" , "isUserInput" : true} , { "programOutput" : "The key element 127 is found at the position 3" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "7" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "2" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "Enter element for a[4] : " , "isProgramOutput" : true} , { "userInput" : "6" , "isUserInput" : true} , { "programOutput" : "Enter element for a[5] : " , "isProgramOutput" : true} , { "userInput" : "7" , "isUserInput" : true} , { "programOutput" : "Enter element for a[6] : " , "isProgramOutput" : true} , { "userInput" : "8" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "The key element 3 is found at the position 2" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : false , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "25" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "7" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "The key element 4 is not found in the array" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "11" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "45" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "37" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "25" , "isUserInput" : true} , { "programOutput" : "The key element 25 is not found in the array" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]}] , "mainFileName" : "Program509.c" , "sOrder" : 5 , "questionNo" : "6348" , "createdTime" : { "$date" : "2016-12-24T10:15:32.627Z"} , "updatedTime" : { "$date" : "2023-01-07T07:28:51.887Z"} , "createdBy" : "ramanatsv@yahoo.com" , "updatedBy" : "sugunam@codetantra.in" , "hasDemo" : false , "hasNotes" : false , "isRichTextEditor" : false , "quill" : false , "hCERA" : "1a73283e26dd88027f7dc58e57d09684" , "hFCA" : "7193397ba5d263895bf2e46a8ea0ed2d" , "hPLEI" : "6a4db7d5ec13d0d25af28ee7a1cf59eb" , "hQT" : "874769712cdcb9663c601152ab657d78" , "doNotRunTestCases" : false , "enableQuestionIntro" : false , "executeUsingCmdArgs" : false , "isCSS" : false , "isJavaScript" : false , "isQuestionHintsRichTextEditor" : false , "compilationErrorQuestionTextInfo" : true , "isPreview" : false , "updateComment" : "Updated." , "answerReviewRequired" : false , "isPreviewHints" : false , "isPreviewQIntro" : false , "multiLanguageBoilerplate" : "no-boiler" , "questionHints" :  null  , "questionHintsQuill" : false , "varDef" : { } , "weightageMode" : false};
+        var cExecutionResultsArr = [ { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "45" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "67" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "35" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "28" , "isUserInput" : true} , { "programOutput" : "Enter element for a[4] : " , "isProgramOutput" : true} , { "userInput" : "16" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "28" , "isUserInput" : true} , { "programOutput" : "The key element 28 is found at the position 3" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "2" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "7" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "1" , "isUserInput" : true} , { "programOutput" : "Enter element for a[4] : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "2" , "isUserInput" : true} , { "programOutput" : "The key element 2 is found at the position 0" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "452" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "356" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "754" , "isUserInput" : true} , { "programOutput" : "Enter element for a[3] : " , "isProgramOutput" : true} , { "userInput" : "127" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "127" , "isUserInput" : true} , { "programOutput" : "The key element 127 is found at the position 3" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "5" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "7" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "4" , "isUserInput" : true} , { "programOutput" : "The key element 4 is not found in the array" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]} , { "cExecutionFlowArr" : [ { "programOutput" : "Enter value of n : " , "isProgramOutput" : true} , { "userInput" : "3" , "isUserInput" : true} , { "programOutput" : "Enter element for a[0] : " , "isProgramOutput" : true} , { "userInput" : "11" , "isUserInput" : true} , { "programOutput" : "Enter element for a[1] : " , "isProgramOutput" : true} , { "userInput" : "45" , "isUserInput" : true} , { "programOutput" : "Enter element for a[2] : " , "isProgramOutput" : true} , { "userInput" : "37" , "isUserInput" : true} , { "programOutput" : "Enter key element : " , "isProgramOutput" : true} , { "userInput" : "25" , "isUserInput" : true} , { "programOutput" : "The key element 25 is not found in the array" , "isProgramOutput" : true} , { "programOutput" : "" , "isProgramOutput" : true}] , "show" : true , "allowRandomOrder" : false , "mainFileName" : "Program509.c" , "partialMarksPec" : "15" , "cmdArgs" : [ ]}];
+        var progQuestionDataTypesArr = { "int16" : { "c" : "short" , "c++" : "short" , "java" : "short" , "python" : "int"} , "int32" : { "c" : "int" , "c++" : "int" , "java" : "int" , "python" : "int"} , "int64" : { "c" : "long" , "c++" : "long" , "java" : "long" , "python" : "int"} , "float32" : { "c" : "float" , "c++" : "float" , "java" : "float" , "python" : "float"} , "float64" : { "c" : "double" , "c++" : "double" , "java" : "double" , "python" : "float"} , "boolean" : { "c" : "int" , "c++" : "bool" , "java" : "boolean" , "python" : "bool"} , "string" : { "c" : "char *" , "c++" : "string" , "java" : "String" , "python" : "str"} , "array" : { "c" : "array" , "c++" : "array" , "java" : "array" , "python" : "array"} , "2dArray" : { "c" : "2dArray" , "c++" : "2dArray" , "java" : "2dArray" , "python" : "2dArray"}};
+        var userSolution = { "filesContentArr" : [ { "fileName" : "Program509.c" , "fileContent" : "#include<stdio.h>\nvoid main()\n{\n\tint a[20],i,x,n;\n\tprintf(\"Enter value of n : \");\n\tscanf(\"%d\",&n);\n\tfor(i=0;i<n;++i)\n\t{\n\tprintf(\"Enter element for a[%d] : \",i);\n\tscanf(\"%d\",&a[i]);\n   }\n    printf(\"Enter key element : \");\n   scanf(\"%d\",&x);\n   for(i=0;i<n;++i)\n   if(a[i]==x)\n   break;\n   if(i<n)\n   printf(\"The key element %d is found at the position %d\",x,i);\n   else\n   printf(\"The key element %d is not found in the array\",x);\n   printf(\"\\n\");\n}"}]};
+        var memberId = '22K61A05B8';
+        var language = '';
+        var date = new Date('Thu Jan 12 14:18:53 UTC 2023').toISOString().substring(0, 10);
+    </script>
+</head>
+<body>
+<header class='text-right'>
+    <div class='vertical-text-page-number'>
+        <b style="margin-right: 1rem;">ID: 22K61A05B8
+        </b>
+        <span>Page No: </span>
+        <span class="mr-2" id="page-number"></span>
+    </div>
+    <div class="vertical-text-group">
+        <span style="margin-right: 1rem;">Sasi Institute of Technology and Engineering (Autonomous)</span>
+        <b>2022-2026-CSE-B
+        </b>
+    </div>
+</header>
+<div id="sectionBody" class="page">
+    <div id='myHeader'>
+        <table id='row' class='table table-condensed table-bordered table-hover'>
+            <thead>
+            <tr>
+                <th class='text-left' style='vertical-align:middle;width:10%'>S.No: 4
+                </th>
+                <th class='text-left' style='width:73%; font-weight: normal;'>Exp. Name: <i
+                        class='expTitle'>Write a C program to Search an element using Linear Search process
+                </i></th>
+                <th class='text-left' id="date" style='vertical-align:middle;width:15px'>Date:</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="subpage">
+        
+        
+        <div class=""><b style='border-bottom:1px solid black;'>Aim:</b></div>
+        
+        <div class="questionText ql-editor" id="questionText">Write a program to <c>search</c> a key element with in the given array of elements using <c>linear search</c> process.<br/><br/>
+
+At the time of execution, the program should print the message on the console as:
+<pre class='creamPreTab4'>Enter value of n : </pre>
+
+For example, if the user gives the <b>input</b> as:
+<pre class='creamPreTab4'>Enter value of n : 3</pre>
+
+Next, the program should print the messages one by one on the console as:
+<pre class='creamPreTab4'>Enter element for a[0] : 
+Enter element for a[1] : 
+Enter element for a[2] : </pre>
+
+if the user gives the <b>input</b> as:
+<pre class='creamPreTab4'>Enter element for a[0] : 89
+Enter element for a[1] : 33
+Enter element for a[2] : 56</pre>
+
+Next, the program should print the message on the console as:
+<pre class='creamPreTab4'>Enter key element : </pre>
+
+if the user gives the <b>input</b> as:
+<pre class='creamPreTab4'>Enter key element : 56</pre>
+
+then the program should <b>print</b> the result as:
+<pre class='creamPreTab4'>
+The key element 56 is found at the position 2
+</pre>
+
+Similarly if the key element is given as <b>25</b> for the above one dimensional array elements then the program should print the output as "<b>The Key element 25 is not found in the array</b>".<br/><br/>
+
+<b>Note:</b> Do use the <b>printf()</b> function with a <b>newline</b> character (<c>\n</c>) at the end.
+        </div>
+        
+        
+        <div style="margin-bottom: 1rem;"><b style='border-bottom:1px solid black;'>Source Code:</b></div>
+        
+        
+        
+        <div id="userSolution" style="padding: 0 15px 0 0;"></div>
+        <div id='executionResultsParentDiv' style='min-width:200px; min-height:200px;'></div>
+        
+        
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        ltr();
+        applyDynamics(".questionText");
+    });
+
+    function ltr() {
+        $('#expTitleTag').text("Write a C program to Search an element using Linear Search process");
+        $('#memberIdTag').text('22K61A05B8');
+        showLoadingModal();
+        arrowRotateEffect();
+        initCode();
+        var labName = 'Data Structures Using C Lab - 21CSCSL2080 - I Year - II Sem - 2022-2026';
+        var qNo = '6348';
+        setTimeout(function () {
+            hideLoadingModal();
+            var $vertical = $('.vertical-text'), width = $vertical.css('width');
+            $vertical.css('transform', "translate(10mm, -" + width + ") rotate(-90deg)");
+            $vertical.css('display', 'none');
+            $('.vertical-text-pageNo').css('display', 'none');
+            
+            
+            showCExecutionResults(cExecutionResultsArr);
+            
+            generatePDF();
+        }, 300);
+    }
+
+    //Once you create an instance like var preloader = new GSPreloader(), call preloader.active(true) to open it, preloader.active(false) to close it, and preloader.active() to get the current status.
+    //Note: The below code should be here and not in some JS file, as it internally uses the current DOM and initializes some parent reference.
+    var preloader = new GSPreloader({
+        radius: 50,
+        dotSize: 18,
+        dotCount: 12,
+        colors: ["#720099", "#CC7300", "#720099", "#CC7300"], //have as many or as few colors as you want.
+        boxOpacity: 0.5,
+        animationOffset: 1.5 //jump 1.5 seconds into the animation for a more active part of the spinning initially (just looks a bit better in my opinion)
+    });
+
+    function initCode() {
+        var solutionContent = "";
+        if (userSolution != null) {
+            if (userSolution.hasOwnProperty('filesContentArr')) {
+                $.each(userSolution.filesContentArr, function (fidx, fileEntry) {
+                    $('#userSolution').append('<ul class="nav nav-tabs"><li><a class="lang-c" style="border-radius: 4px 4px 0 0; border: 1px solid black;">' + fileEntry['fileName'] + '</a></li></ul>'
+                        + '<pre style="overflow: visible; border-radius: 0 4px 4px 4px; border: 1px solid black;" class="lang-c linenums1" id="userSolution' + fidx + '"></pre><br>');
+                    $('#userSolution' + fidx).text(fileEntry['fileContent']);
+                });
+            } else if (userSolution.hasOwnProperty('content')) {
+                solutionContent = "\n" + userSolution.content + "\n\n";
+                $('#userSolution').text(solutionContent);
+            } else if (userSolution.hasOwnProperty('essayAnswer')) {
+                solutionContent = "\n" + userSolution.essayAnswer + "\n\n";
+                $('#userSolution').text(solutionContent);
+            }
+        }
+    }
+
+    function getExecutionResultsParentDiv() {
+        return 'executionResultsParentDiv';
+    }
+
+    function updateQuestionText() {
+        var questionText = questionDBObject.questionText;
+        if (questionDBObject.multiLanguageBoilerplate !== 'no-boiler') {
+            questionText = generateMultiLangQuestionTextInfo(questionDBObject.multiLangParameters, questionDBObject.functionName, questionDBObject.returnType, language.toLowerCase(), questionDBObject["arrayElementType"]) + '<br><br>' + questionDBObject.questionText;
+        }
+        $("#questionText").html(questionText);
+    }
+
+    function showExecutionResultsWithoutComparisionWhenDoNotRunTestCases() {
+        var allTablesText = "<div class='row'><div class='col-sm-12'><h3 style='margin-top: 7px; padding:10px;' class=' text-center well'>Execution Results"
+            + "<span id='executionResultsStatusSpan' style='font-size:65%;'></span></h3><div id='executionResultTablesContainerDiv' class='col-sm-12'>";
+        $('#' + getExecutionResultsParentDiv()).append(allTablesText + "</div></div></div>");
+        $('#executionResultsStatusSpan').html(" - <i class='fa fa-check'></i>").css('color', 'green');
+        $("#executionResultTablesContainerDiv").html("<div class='text-center darkShadow' style='padding: 4%; font-family: monospace; color: green;font-size: 16px;'>Program has been executed without test cases</div>");
+    }
+
+    function showCExecutionResults(cExecutionResultsArr) {
+        var allTablesText = "<div class='row'><div class='col-sm-12'><h4 id='execResultsHeading' class=' text-center '>Execution Results"
+            + "<span id='executionResultsStatusSpan' style='font-size:70%;'></span>"
+            + "</h4>";
+        allTablesText = allTablesText + "<div id='executionResultTablesContainerDiv' class='col-sm-12'>";
+        $('#' + getExecutionResultsParentDiv()).append(allTablesText + "</div></div></div>");
+        var allTestCasesPassed = true;
+
+        $.each(cExecutionResultsArr, function (idx, executionResult) {
+            var cExecutionFlowArr = executionResult['cExecutionFlowArr'];
+            var testCaseText = "<div style='margin-bottom: 5%;'> " +
+                "                   <div class='row execution-results-border'>" +
+                "<div class='col-12 col-sm-12 p-2 text-center font-weight-bold'>Test Case - " + (idx + 1) + "</div>" +
+                "</div>";
+            if (executionResult["isJava"]) {
+                testCaseText += "<div class='row execution-results-border'> <div class='col-12 col-sm-12'>Method Call</div></div>";
+                testCaseText += "<div class='row execution-results-border'>" +
+                    "<div class='col-12 col-sm-12'>" +
+                    "<pre class='outputPre'>"
+                    + executionResult["methodCallText"];
+                if (executionResult.argsArr === "[ ]" || executionResult.argsArr === "") {
+                    testCaseText += " - Arguments : None ";
+                } else {
+                    testCaseText += " - Arguments : " + executionResult.argsArr;
+                }
+                testCaseText += "</pre></div></div>";
+            }
+            testCaseText += "<div class='row execution-results-border'>" +
+                "<div class='col-12 p-1 ml-2 font-weight-bold'>User Output</div></div>";
+            var execResultsText = "";
+            for (var execIndex = 0; execIndex < cExecutionFlowArr.length; execIndex++) {
+                var entry = cExecutionFlowArr[execIndex];
+                if (!entry.hasOwnProperty('userOutput')) {
+                    entry['userOutput'] = entry['programOutput'];//copy the same as all test cases would have succeeded
+                }
+                if (entry.isUserInput) {
+                    if (execResultsText.indexOf("__user__Input__") === -1) {
+                        execResultsText = execResultsText + "<div class='row execution-results-border'><div class='col-6'>" +
+                            "<span class='cmd' style='padding: 1px 4px' title='User Input'>" + entry.userInput + "</span></div></div>";
+                    } else {
+                        var inputText = "<span class='cmd' style='padding: 1px 4px' title='User Input'>" + entry.userInput + "</span>";
+                        execResultsText = execResultsText.replace(/__user__Input__/g, inputText);
+                    }
+                } else if (entry.isProgramOutput && entry.programOutput) {
+                    execResultsText = execResultsText + "<div class='row execution-results-border'>" +
+                        "<div class='col-12'>" +
+                        "<pre class='outputPre'>" + entry.programOutput + "";
+                    execResultsText = execResultsText + "__user__Input__</pre></div></div>";
+                }
+            }
+            execResultsText = execResultsText.replace(/__user__Input__/g, "");
+            execResultsText = execResultsText + "";
+            testCaseText = testCaseText + execResultsText;
+            testCaseText = testCaseText + "</div>";
+            $('#executionResultTablesContainerDiv').append(testCaseText);
+        });
+        $('#executionResultsStatusSpan').text(" - All test cases have succeeded!").css('color', 'green');
+        return allTestCasesPassed;
+    }
+
+    function arrowRotateEffect() {
+        $('#sectionContentDiv').on('show.bs.collapse', function () {
+            $(this).siblings('.section-heading').removeClass('active');
+        }).on('hide.bs.collapse', function () {
+            $(this).siblings('.section-heading').addClass('active');
+        });
+    }
+
+    function generatePDF() {
+        window.PagedPolyfill.preview().then(() => {
+            const fileName = (memberId ? memberId + "_" : "") + '6348' + "_" + moment().format("YYYY_MM_DD");
+            pagedJsPrintUtils.getPDFBlobFromPagedJSPage().then((blob) => {
+                const url = pagedJsPrintUtils.downloadBlob(blob, fileName);
+                Swal.fire('Info', 'Lab record generated as PDF successfully', 'info').then(() => {
+                    URL.revokeObjectURL(url);
+                    window.close();
+                });
+            }).catch((e) => {
+                Swal.fire('Error', 'Encountered error with message: ' + e.message, 'error').then(() => {
+                    window.close();
+                });
+            });
+        }).catch(e => {
+            Swal.fire('Error', 'Error encountered: ' + (e.message || e), 'error').then(() => {
+                window.close();
+            });
+            console.dir(e);
+        });
+    }
+
+    document.getElementById('date').innerHTML += date;
+</script>
+</body>
+</html>
